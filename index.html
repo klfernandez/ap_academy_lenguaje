@@ -211,7 +211,7 @@ function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random
 function renderConfig(){
   const max=pool();
   if(cfg.qty>max)cfg.qty=max;
-  $("lead").textContent=`Práctica de Lenguaje para el examen de admisión a la UMSA, con ${fmt(ALL.length)} preguntas de ${SUBJ.length} temas del banco Léxica de AP Academy.`;
+  $("lead").textContent=`Práctica de Lenguaje para el examen de admisión a la UMSA, con ${fmt(ALL.length)} preguntas de ${SUBJ.length} temas del banco de preguntas elaborado por AP Academy.`;
   $("chips").innerHTML="";
   PRESETS.filter(n=>n<=max).forEach(n=>{
     const b=document.createElement("button");b.className="chip";b.type="button";b.textContent=n;
